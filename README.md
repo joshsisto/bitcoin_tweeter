@@ -12,15 +12,42 @@ The code is written in Python 3 and uses the
 python library to send tweets. 
 
 ## Installation and Setup
-Install Tweepy and download the git repo
+### 1. Set Up Auth
+The authentication keys for the different APIs are read from shell environment
+variables. Each service has different steps to obtain them.
 
-    pip3 install tweepy
-    git clone https://github.com/llamafarmer/bitcoin_tweeter.git
-    
-Login to dev.twitter.com to create your twitter API keys and tokens. 
-[Here](https://www.slickremix.com/docs/how-to-get-api-keys-and-tokens-for-twitter/) 
-is a how-to link.
+#### Twitter
 
-Update key and token information in tweetBTC.py
+Log in to your [Twitter](https://twitter.com/) account and
+[create a new application](https://apps.twitter.com/app/new). Under the *Keys
+and Access Tokens* tab for [your app](https://apps.twitter.com/) you'll find
+the *Consumer Key* and *Consumer Secret*. Export both to environment variables:
 
-Add to cron
+```shell
+export TWITTER_CONSUMER_KEY="<YOUR_CONSUMER_KEY>"
+export TWITTER_CONSUMER_SECRET="<YOUR_CONSUMER_SECRET>"
+```
+
+If you want the tweets to come from the same account that owns the application,
+simply use the *Access Token* and *Access Token Secret* on the same page. If
+you want to tweet from a different account, follow the
+[steps to obtain an access token](https://dev.twitter.com/oauth/overview). Then
+export both to environment variables:
+
+```shell
+export TWITTER_ACCESS_TOKEN="<YOUR_ACCESS_TOKEN>"
+export TWITTER_ACCESS_TOKEN_SECRET="<YOUR_ACCESS_TOKEN_SECRET>"
+```
+
+### 2. Install Dependencies
+
+There are a few library dependencies, which you can install using
+[pip](https://pip.pypa.io/en/stable/quickstart/):
+
+```shell
+$ pip install -r requirements.txt
+```
+
+### 3. Test
+
+### 4. Add to Cron
