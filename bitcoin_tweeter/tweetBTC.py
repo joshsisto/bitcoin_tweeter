@@ -2,11 +2,8 @@ from __future__ import absolute_import, print_function
 from datetime import datetime, timedelta
 from json import loads
 from urllib import urlopen
-
 import tweepy
 import time
-
-# Import credentials from credentials.py
 from credentials import *
 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
@@ -17,18 +14,19 @@ api = tweepy.API(auth)
 # see the name of the account print out
 print(api.me().name)
 
-#Bitcoin
-
 def get_bitcoin_price(endpoint):
+    """query the coindesk api"""
     req = urlopen('http://api.coindesk.com/v1/bpi/{}'.format(endpoint))
     return loads(req.read())
 
 
 def get_current_btc_price():
+    """get bitcoin price index in US dollars by querying the coindesk API"""
     return get_bitcoin_price('currentprice.json')['bpi']['USD']
 
 
 def get_last_years_btc_price():
+    """get last years bitcoin price and store is as a variable"""
     last_year = (datetime.now() - timedelta(days=366)).strftime('%Y-%m-%d')
     endpoint = 'historical/close.json?start={0}&end={0}'.format(last_year)
     return get_bitcoin_price(endpoint)['bpi']
