@@ -1,6 +1,8 @@
 # bitcoin_tweeter
 Python 3.4.2 | tweepy 3.5.0
 
+<img src="/images/pythonlogo.png" alt="Python Logo" style="width: 200px;"/><img src="/images/twittercoin.jpg" alt="Python Logo" style="width: 200px;"/>
+
 This 
 [twitter bot](https://twitter.com/Evil_1T) 
 uses the 
