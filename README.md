@@ -9,12 +9,12 @@ to tweet the current bitcoin price and the price of bitcoin last year.
 
 The code is written in Python 3 and uses the 
 [Tweepy](http://www.tweepy.org/) 
-python library to send tweets. 
+python library to send tweets. Currently running on my 
+[raspberry pi](http://amzn.to/2yBgiIi).
 
 ## Installation and Setup
 ### 1. Set Up Auth
-The authentication keys for the different APIs are read from shell environment
-variables. Each service has different steps to obtain them.
+The authentication keys for the different APIs are stored in the [`credentials module`](credentials.py)
 
 #### Twitter
 
@@ -36,9 +36,24 @@ Currently there is one dependency you need to install
 [pip](https://pip.pypa.io/en/stable/quickstart/):
 
 ```shell
-$ pip install -r requirements.txt
+$ pip3 install -r requirements.txt
 ```
 
-### 3. Test
+### 3. Add to Cron
+Add script to cron
 
-### 4. Add to Cron
+```shell
+$ sudo crontab -e
+```
+
+Add the line below to cron and then press ctrl+x to exit and y to save
+
+```shell
+0 8,20 * * * python3 <location to your script>/tweetBTC.py
+```
+
+The line above will execute the script at 8AM and 8PM everyday
+
+Note: Make sure to update <location to your script> with the path to your script.
+
+For example /home/pi/bitcoin_tweeter
