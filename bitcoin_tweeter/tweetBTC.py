@@ -1,6 +1,7 @@
 from __future__ import absolute_import, print_function
 from datetime import datetime, timedelta
 from json import loads
+from credentials import *
 import urllib.request
 import tweepy
 
