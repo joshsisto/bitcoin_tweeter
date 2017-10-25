@@ -12,7 +12,7 @@ to tweet the current bitcoin price and the price of bitcoin last year.
 The code is written in Python 3 and uses the 
 [Tweepy](http://www.tweepy.org/) 
 python library to send tweets. Currently running on my 
-[raspberry pi](http://amzn.to/2yBgiIi).
+[raspberry pi](http://amzn.to/2zCPAxu).
 
 ## Installation and Setup
 ### 1. Set Up Auth
