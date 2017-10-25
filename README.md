@@ -14,21 +14,21 @@ python library to send tweets. Currently running on my
 
 ## Installation and Setup
 ### 1. Set Up Auth
-The authentication keys for the different APIs are stored in the [`credentials module`](credentials.py)
+The authentication keys for the different APIs are stored in the [`credentials module`](/bitcoin_tweeter/credentials.py)
 
 #### Twitter
 
 Log in to your [Twitter](https://twitter.com/) account and
 [create a new application](https://apps.twitter.com/app/new). Under the *Keys
 and Access Tokens* tab for [your app](https://apps.twitter.com/) you'll find
-the *Consumer Key* and *Consumer Secret*. Update [`credentials`](credentials.py) with your 
+the *Consumer Key* and *Consumer Secret*. Update [`credentials`](/bitcoin_tweeter/credentials.py) with your 
 *Consumer Key* and *Consumer Secret*
 
 If you want the tweets to come from the same account that owns the application,
 simply use the *Access Token* and *Access Token Secret* on the same page. If
 you want to tweet from a different account, follow the
 [steps to obtain an access token](https://dev.twitter.com/oauth/overview). Then
-update [`credentials`](credentials.py) with your *Access Token* and *Access Token Secret*
+update [`credentials`](/bitcoin_tweeter/credentials.py) with your *Access Token* and *Access Token Secret*
 
 ### 2. Install Dependencies
 
@@ -54,6 +54,6 @@ Add the line below to cron and then press ctrl+x to exit and y to save
 
 The line above will execute the script at 8AM and 8PM everyday
 
-Note: Make sure to update <location to your script> with the path to your script.
+Note: Make sure to update ```<location to your script>``` with the path to your script.
 
-For example /home/pi/bitcoin_tweeter
+For example: /home/pi/bitcoin_tweeter
