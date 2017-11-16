@@ -59,3 +59,7 @@ The line above will execute the script at 8AM and 8PM everyday
 Note: Make sure to update ```<location to your script>``` with the path to your script.
 
 For example: /home/pi/bitcoin_tweeter
+
+## Copyright and License
+Copyright (c) 2017 Josh Sisto [MIT License](/LICENSE)
+
