@@ -1,8 +1,6 @@
 # bitcoin_tweeter
 Python 3.4.2 | tweepy 3.5.0
 
-<a href="https://twitter.com/Evil_1T?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @Evil_1T</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 <img src="/images/pythonlogo.png" alt="Python Logo" style="width: 200px;"/> <img src="/images/twittercoin.jpg" alt="Twitter and Bitcoin" style="width: 200px;"/> <img src="/images/Raspberry-Pi-Zero-FL.jpg" alt="Pi Zero" style="width: 200px;"/>
 
 This 
