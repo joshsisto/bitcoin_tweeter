@@ -2,8 +2,8 @@ from __future__ import absolute_import, print_function
 from datetime import datetime, timedelta
 from json import loads
 from credentials import *
-import urllib.request
 import tweepy
+import requests
 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
@@ -15,10 +15,9 @@ print(api.me().name)
 
 def get_bitcoin_price(endpoint):
     """query the coindesk api"""
-    req = urllib.request.Request('http://api.coindesk.com/v1/bpi/{}'.format(endpoint))
-    result = urllib.request.urlopen(req)
-    resulttext = result.read()
-    return loads(resulttext)
+    req = requests.get('http://api.coindesk.com/v1/bpi/{}'.format(endpoint))
+    result = req.text
+    return loads(result)
 
 def get_current_btc_price():
     """get bitcoin price index in US dollars by querying the coindesk API"""
