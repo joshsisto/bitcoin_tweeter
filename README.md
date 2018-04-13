@@ -61,9 +61,6 @@ Note: Make sure to update ```<location to your script>``` with the path to your 
 For example: /home/pi/bitcoin_tweeter
 
 ## Follow my twitter bot
-<a class="twitter-timeline"  href="https://twitter.com/joshsisto" data-widget-id="712877733974441984">Tweets by @joshsisto</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-          
 [Evil_1T](https://twitter.com/Evil_1T)
 
 ## Copyright and License
