@@ -60,6 +60,9 @@ Note: Make sure to update ```<location to your script>``` with the path to your 
 
 For example: /home/pi/bitcoin_tweeter
 
+## Follow my twitter bot
+[Evil_1T](https://twitter.com/Evil_1T)
+
 ## Copyright and License
-Copyright (c) 2017 Josh Sisto [MIT License](/LICENSE)
+Copyright (c) 2018 Josh Sisto [MIT License](/LICENSE)
 
